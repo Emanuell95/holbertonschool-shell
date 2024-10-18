@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -h vincent:staff _hello
+find . -maxdepth 1 -type l -name "_hello" -exec chown vincent:staff {} \;
